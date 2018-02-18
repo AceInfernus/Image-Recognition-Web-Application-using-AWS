@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<ul>
+    <font size = "150">
+        <p style="text-align: center" 150DX>
+        WELCOME TO FACE RECOGNITION
+        </p>
+    </font>
+    <p>
+    <div style="text-align: center">
+    <font size = "50"><a href="{{url_for('data_form')}}" class="button" 50px>Upload A New Face To Collection</a></font>
+    </div>
+    </p>
+    <div style="text-align: center">
+    <font size = "50"> <a href="{{url_for('run_form')}}" class="button" 50px>Run Face Recognition</a></font>
+    </div>
+</ul>
+
+{% endblock %}

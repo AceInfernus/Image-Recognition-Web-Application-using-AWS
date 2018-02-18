@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<body>
+    <font size="80">
+    <h1 style="...">UPLOAD A NEW FACE</h1>
+    <form action="{{url_for ('image')}}" enctype="multipart/form-data" method="post" style="...">
+Please upload an image to your face Collection! Don't forget to input its full name!<div><input type="file" name="image_file"<br />
+<input type="submit" value="Send">
+<input type="reset">
+<input type="text" class="form-control" placeholder="Name" name="name" value="{{request.form.name}}">
+</div>
+</form>
+</font>
+
+</body>
+
+{% endblock %}

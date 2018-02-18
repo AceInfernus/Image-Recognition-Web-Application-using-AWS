@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+    <font size ="80">
+    <hl style="text-align:center">RUN RECOGNITI0N</hl>
+    <form action="{{url_for('image_run')}}" enctype="multipart/form-data" method="post" style="text-align:center">
+    Please upload an image to run recognition <input type="file" name="image_file" ><br />
+    <input type="submit" value="Send">
+    <input type="reset">
+    </form>
+    </font>
+</body>
+
+
+
+
+{% endblock %}
